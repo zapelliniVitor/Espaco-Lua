@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Nexa Light";
+  src: url("assets/fonts/nexa-light.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nexa Light", Arial, sans-serif;
+  background-color: #414141;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1e1e1e;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.logo img {
+  height: 45px;
+  width: 275px;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin: 0 30px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #ccc; /* Cor de hover */
+}
+
+/* Imagem Principal */
+.imagem-principal {
+  margin: 0;
+}
+
+.imagem-principal img {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: auto;
+  display: block;
+}
+
+/* Terapias */
+
+.terapias {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.terapias-header img {
+  display: block;
+  margin: 20px auto;
+}
+
+.texto-principal {
+  width: 35%;
+}
+
+.icone-lua {
+  width: 50px;
+  margin-top: 10px;
+  margin-bottom: 24vh;
+}
+
+.texto-secundario {
+  width: 35%;
+}
+
+.terapia-descricao {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12vh;
+}
