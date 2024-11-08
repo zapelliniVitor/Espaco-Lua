@@ -213,7 +213,7 @@
             id="assunto"
             name="assunto"
             required
-            placeholder=" Assunto:"
+            placeholder="Assunto:"
           />
           <textarea
             id="mensagem"
@@ -222,18 +222,53 @@
             required
             placeholder="Mensagem:"
           ></textarea>
+
           <button type="submit">ENVIAR</button>
         </form>
       </div>
     </section>
 
+    <!-- Avaliações -->
+    <section id="avaliacoes" class="avaliacoes">
+      <img
+        src="assets/imgs/AvaliacoesFundo.png"
+        alt="Fundo de Avaliações"
+        class="avaliacoes-fundo"
+      />
+      <div class="avaliacao-container">
+        <div class="avaliacao-item active">
+          <img
+            src="assets/imgs/Avaliacao1.png"
+            alt="Avaliação 1"
+            class="avaliacao-imagem"
+          />
+        </div>
+        <div class="avaliacao-item">
+          <img
+            src="assets/imgs/Avaliacao2.png"
+            alt="Avaliação 2"
+            class="avaliacao-imagem"
+          />
+        </div>
+        <div class="avaliacao-item">
+          <img
+            src="assets/imgs/Avaliacao3.png"
+            alt="Avaliação 3"
+            class="avaliacao-imagem"
+          />
+        </div>
+        <div class="avaliacao-controle">
+          <span
+            class="avaliacao-ponto ativo"
+            onclick="mostrarAvaliacao(0)"
+          ></span>
+          <span class="avaliacao-ponto" onclick="mostrarAvaliacao(1)"></span>
+          <span class="avaliacao-ponto" onclick="mostrarAvaliacao(2)"></span>
+        </div>
+      </div>
+    </section>
+
     <!-- Script JavaScript -->
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
-    <script>
-      (function () {
-        emailjs.init("VQp7Ykno-i_7s8CvC");
-      })();
-    </script>
   </body>
 </html>

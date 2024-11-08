@@ -307,5 +307,62 @@ h2 {
 }
 
 .formulario-contato button:hover {
+  background-color: #333 !important;
+}
+
+/* Avaliações */
+.avaliacoes {
+  position: relative;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.avaliacoes-fundo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: -1;
+}
+
+.avaliacao-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 18vw;
+}
+
+.avaliacao-item {
+  display: none;
+}
+
+.avaliacao-item.active {
+  display: block;
+}
+
+.avaliacao-imagem {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.avaliacao-controle {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.avaliacao-ponto {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.avaliacao-ponto.ativo {
   background-color: #333;
 }
