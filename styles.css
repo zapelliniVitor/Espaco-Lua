@@ -205,3 +205,107 @@ html {
   font-size: 20px;
   margin-top: 30px;
 }
+
+/* Dúvidas Frequentes e Contato */
+
+.duvidas-contato {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  background-color: #414141;
+  color: #fff;
+  border-radius: 20px;
+  gap: 20px;
+}
+
+.duvidas-frequentes,
+.formulario-contato {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  color: #414141;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+}
+
+.accordion-button {
+  width: 100%;
+  text-align: left;
+  background-color: #f1f1f1;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 10px;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.accordion-button:hover {
+  background-color: #ddd;
+}
+
+.accordion-content {
+  display: none;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.accordion-content p {
+  margin: 0;
+}
+
+.formulario-contato form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-contato label {
+  margin-bottom: 5px;
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background-color: #737373;
+  color: #fff;
+  opacity: 1;
+}
+
+.formulario-contato textarea {
+  border-radius: 20px;
+}
+
+.formulario-contato input::placeholder,
+.formulario-contato textarea::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.formulario-contato button {
+  background-color: #414141;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario-contato button:hover {
+  background-color: #333;
+}

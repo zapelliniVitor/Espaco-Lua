@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu Projeto</title>
+    <title>Espaço Lua</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -132,7 +132,108 @@
       </div>
     </section>
 
+    <!-- Dúvidas Frequentes e Contato -->
+    <section class="duvidas-contato">
+      <div class="duvidas-frequentes">
+        <h2>DÚVIDAS FREQUENTES</h2>
+        <div class="accordion-item">
+          <button class="accordion-button">Quem Somos?</button>
+          <div class="accordion-content">
+            <p>
+              Somos um espaço acolhedor que vai usar de terapias manuais para
+              melhorar seu dia a dia e sua qualidade de vida, trazendo bem-estar
+              e conforto.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-button">Onde Ficamos?</button>
+          <div class="accordion-content">
+            <p>
+              Ficamos no Bairro Lunar, Rua Estrelas, número 777. Conheça mais do
+              nosso espaço em nossas redes sociais.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-button">Nosso Contato</button>
+          <div class="accordion-content">
+            <p>
+              Entre em contato com a gente preenchendo o formulário ao lado, ou
+              se preferir nos mande uma mensagem em nossas redes sociais, somos
+              <a href="https://linkedin.com/in/sindydoege/" target="_blank"
+                >@espaço.lua</a
+              >
+
+              em todas as mídas socias.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-button">
+            Qual Nosso Horário De Atendimento?
+          </button>
+          <div class="accordion-content">
+            <p>
+              Nosso horário de atendimento é de segunda-feira a sexta-feira das
+              9h às 19h, e no sábado das 7h30 às 13h. Venha nos visitar!
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-button">Outras Dúvidas?</button>
+          <div class="accordion-content">
+            <p>
+              Entre em contato com a gente para que possamos responder todas as
+              suas dúvidas! Esperamos por você aqui no Espaço Lua.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="formulario-contato">
+        <h2>MARQUE SUA CONSULTA</h2>
+        <form id="marqueConsultaForm">
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            required
+            placeholder="Nome:"
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Email:"
+          />
+          <input
+            type="text"
+            id="assunto"
+            name="assunto"
+            required
+            placeholder=" Assunto:"
+          />
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="5"
+            required
+            placeholder="Mensagem:"
+          ></textarea>
+          <button type="submit">ENVIAR</button>
+        </form>
+      </div>
+    </section>
+
     <!-- Script JavaScript -->
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("VQp7Ykno-i_7s8CvC");
+      })();
+    </script>
   </body>
 </html>
